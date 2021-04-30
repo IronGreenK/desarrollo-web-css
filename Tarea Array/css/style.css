@@ -1,0 +1,238 @@
+*{
+    list-style: none;
+    margin: 0%;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #E1DFDF;
+}
+
+.img-principal{
+    width: 100%;
+}
+
+
+/*-------------------* 
+*------CABECERA------* 
+*--------------------*/
+
+.main{
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo img{
+    width: 30%; padding-top: 1rem;
+}
+
+.navegation{
+    margin: 1%;
+}
+
+ul{ 
+    overflow-x:hidden;
+    white-space:nowrap;
+    padding-top: 4%;
+}
+
+
+  
+
+li{ 
+    display:inline;
+}
+
+.search{
+    border-radius: 0.5rem;
+    background-color: lightcyan;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    ul{ 
+        padding-top: 2%;
+    }
+    
+    
+  }
+  
+@media (max-width: 767px) {
+
+.logo img{
+    width: 70%; padding-top:10%;
+}
+
+ul{ 
+    padding-top: 0%;
+}
+
+}
+
+
+/*-------------------* 
+*------SECCIONES-----* 
+*--------------------*/
+
+
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 3%;
+}
+.title-section{
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 300%;
+    padding-bottom: 1rem;
+    border-bottom: 2px gray solid;
+ 
+}
+
+.module{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 150px;
+}
+
+.img-section{
+    
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+.list{
+    margin-top: 2.5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 50%;
+}
+
+.title-list{
+    font-size: 200%;
+    border-bottom: 2px grey solid;
+    padding-bottom: 1%;
+}
+
+.list-module{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: left;
+    padding-bottom: 1rem;
+    border-bottom: 0.05px rgb(204, 204, 204) solid;
+
+}
+
+.img-list{
+    width: 10%;
+    height: 10%;
+    margin-right: 1rem;
+}
+.description{
+    display: grid;
+    grid-gap: 10px;
+    justify-content: space-between;
+
+}
+
+.name{
+    font-size: 120%;
+
+}
+
+.price{
+    font-size: 120%;
+
+
+}
+
+.button-module{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.button-1{
+    background-image: url("../img/frostpunk.jpg");
+}
+
+.button-2{
+    background-image: url("../img/Diesel_productv2_grand-theft-auto-v_home_GTAV_EGS_Artwork_1280x720_V04-1280x720-31e7e0e50fda38709553f5313027ba5b76bd10b6.jpg"); 
+}
+
+.button-3{
+    background-image: url("../img/share.png");
+}
+
+.button-4{
+    background-image: url("../img/monster-hunter-world-wallpaper-generacion-xbox.jpg");
+}
+
+.button-5{
+    background-image: url("../img/bfv-yeartwoedition-simplified.jpg.adapt.crop191x100.628p.jpg");
+}
+
+.button-6{
+    background-image: url("../img/H2x1_NSwitch_MortalKombat11_image1600w.jpg");
+}
+
+.button-7{
+    background-image: url("../img/Stardew-Valley.jpg");
+}
+
+.button-8{
+    background-image: url("../img/Satisfactory.jpg");
+}
+
+.button-9{
+    background-image: url("../img/call-of-duty-black-ops-cold-war-key-art.jpg");
+}
+
+.button-10{
+    background-image: url("../img/minecraft-2049381.jpg");
+}
+
+.button-11{
+    background-image: url("../img/Phasmophobia_art.jpg");
+}
+
+.button-12{
+    background-image: url("../img/1612762445_829550_1612762544_noticia_normal.jpg");
+}
+
+.button-finish{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.button-finish button{
+    padding: 2rem;
+}
+
+/*-------------------* 
+*----PIE DE PAGINA---* 
+*--------------------*/
+.foot{
+    margin-top: 10%;
+}
+
+.module-foot{
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+}
+
+.text-foot{
+    padding-top: 0.5%;
+    text-align: center;
+}
