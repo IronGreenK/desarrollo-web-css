@@ -1,0 +1,84 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/3710385.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain {
+    padding: 1em;
+    margin-top: 10em;
+    background-color:floralwhite;
+    border-radius: .5em;
+
+}
+
+.title{
+    text-align: center;
+    grid-area: title;
+    
+}
+.name{grid-area: nombre;}
+.apellidoMaterno{grid-area: apMat;}
+.apellidoPaterno{grid-area: apPat;}
+.email{grid-area: email;}
+.telefono{grid-area: telefono;}
+.direccion{grid-area: direccion;}
+.cboxTerminos{grid-area: terminos;}
+.cboxPoliticas{grid-area: politicas;}
+.button-submit{grid-area: boton;}
+
+form {
+
+  display: grid;
+  grid-template-areas:  'title title'
+                        'nombre nombre'
+                        'apPat apMat'
+                        'email telefono'
+                        'direccion direccion'
+                        'direccion direccion'
+                        'terminos politicas'
+                        'boton boton';
+}
+
+
+
+
+.wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.wrapper > * {
+    padding: 1em;
+}
+
+button,input{
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.nombre{
+    grid-column: 1/2;
+}
+
+button{
+    background: blue;
+    width: 100%;
+    border: 0;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover, button:focus {
+    background: indigo;
+    outline: 0;
+}
+
+label{
+    font-weight: bold;
+}
